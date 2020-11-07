@@ -16,10 +16,6 @@ public class OrderController {
     private List<Order> orders;
     private final ModelMapper modelMapper;
 
-    public OrderController(ModelMapper modelMapper) {
-        this.orders = orders;
-    }
-
     @GetMapping
     public List<Order> getOrders() {
         return orders;
